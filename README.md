@@ -1,2 +1,2 @@
-# ownership_based_memory_management
+# Ownership based Memory Management Model
 Event-b project. lecture project. Learn from Rust Language
