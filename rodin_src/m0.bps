@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.psFile>
+<org.eventb.core.psStatus name="DLF/THM" org.eventb.core.confidence="1000" org.eventb.core.poStamp="107" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="107" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="107" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="start_block/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="107" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="create_object/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="107" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="create_object/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="107" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="ownership_transfer/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="107" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="ownership_transfer/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="107" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="end_block/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="107" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="end_block/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="107" org.eventb.core.psManual="false"/>
+</org.eventb.core.psFile>

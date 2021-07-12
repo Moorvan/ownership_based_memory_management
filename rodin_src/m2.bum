@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" version="5">
+<org.eventb.core.refinesMachine name="'" org.eventb.core.target="m1"/>
+<org.eventb.core.seesContext name="(" org.eventb.core.target="c0"/>
+<org.eventb.core.variable name=")" org.eventb.core.identifier="vars_in_block"/>
+<org.eventb.core.variable name="+" org.eventb.core.identifier="vars"/>
+<org.eventb.core.variable name="-" org.eventb.core.identifier="objects"/>
+<org.eventb.core.variable name="/" org.eventb.core.identifier="blocks"/>
+<org.eventb.core.variable name="1" org.eventb.core.identifier="var_object_ownership"/>
+<org.eventb.core.event name="2" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="INITIALISATION"/>
+<org.eventb.core.event name="3" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="start_block">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="start_block"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="4" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="create_object">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="create_object"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="8" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="ownership_transfer_in_block">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="ownership_transfer"/>
+<org.eventb.core.parameter name="(" org.eventb.core.identifier="o"/>
+<org.eventb.core.guard name=")" org.eventb.core.label="grd1" org.eventb.core.predicate="o ∈ objects"/>
+<org.eventb.core.parameter name="+" org.eventb.core.identifier="v1"/>
+<org.eventb.core.parameter name="," org.eventb.core.identifier="v2"/>
+<org.eventb.core.guard name="-" org.eventb.core.label="grd2" org.eventb.core.predicate="b ∈ blocks"/>
+<org.eventb.core.guard name="." org.eventb.core.label="grd3" org.eventb.core.predicate="v1 ∈ vars"/>
+<org.eventb.core.guard name="/" org.eventb.core.label="grd4" org.eventb.core.predicate="v1 ↦ b ∈ vars_in_block"/>
+<org.eventb.core.guard name="0" org.eventb.core.label="grd5" org.eventb.core.predicate="v1 ↦ o ∈ var_object_ownership"/>
+<org.eventb.core.guard name="1" org.eventb.core.label="grd6" org.eventb.core.predicate="v2 ∉ vars"/>
+<org.eventb.core.witness name="2" org.eventb.core.label="b1" org.eventb.core.predicate="b1 = b"/>
+<org.eventb.core.parameter name="7" org.eventb.core.identifier="b"/>
+<org.eventb.core.witness name="8" org.eventb.core.label="b2" org.eventb.core.predicate="b2 = b"/>
+<org.eventb.core.action name="9" org.eventb.core.assignment="vars ≔ (vars ∖ {v1}) ∪ {v2}" org.eventb.core.label="act1"/>
+<org.eventb.core.action name=":" org.eventb.core.assignment="vars_in_block ≔ (vars_in_block ∖ {v1 ↦ b}) ∪ {v2 ↦ b}" org.eventb.core.label="act2"/>
+<org.eventb.core.action name=";" org.eventb.core.assignment="var_object_ownership ≔ (var_object_ownership ∖ {v1 ↦ o}) ∪ {v2 ↦ o}" org.eventb.core.label="act3"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="5" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="ownership_transfer_between_blocks">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="ownership_transfer"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd11" org.eventb.core.predicate="b1 ≠ b2"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="6" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="access_object">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="access_object"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="7" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="end_block">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="end_block"/>
+</org.eventb.core.event>
+<org.eventb.core.invariant name="DLF" org.eventb.core.label="DLF" org.eventb.core.predicate="(&#10;  ∃ b · (&#10;     (b∉blocks)&#10;   )&#10;)∨(&#10;  ∃ b, o, v · (&#10;     (o∉objects)&#10;    ∧(v∉vars)&#10;    ∧(b∈blocks)&#10;   )&#10;)∨(&#10;  ∃ b, o, v1, v2 · (&#10;     (o∈objects)&#10;    ∧(b∈blocks)&#10;    ∧(v1∈vars)&#10;    ∧(v1 ↦ b∈vars_in_block)&#10;    ∧(v1 ↦ o∈var_object_ownership)&#10;    ∧(v2∉vars)&#10;   )&#10;)∨(&#10;  ∃ b1, b2, o, v1, v2 · (&#10;     (o∈objects)&#10;    ∧(b1∈blocks)&#10;    ∧(b2∈blocks)&#10;    ∧(v1∈vars)&#10;    ∧(v2∉vars)&#10;    ∧(v1 ↦ b1∈vars_in_block)&#10;    ∧(v1 ↦ o∈var_object_ownership)&#10;    ∧(b1≠b2)&#10;   )&#10;)∨(&#10;  ∃ b, o, v · (&#10;     (o∈objects)&#10;    ∧(v∈vars)&#10;    ∧(b∈blocks)&#10;    ∧(v ↦ b∈vars_in_block)&#10;    ∧(v ↦ o∈var_object_ownership)&#10;   )&#10;)∨(&#10;  ∃ b · (&#10;     (b∈blocks)&#10;   )&#10;)" org.eventb.core.theorem="true"/>
+</org.eventb.core.machineFile>

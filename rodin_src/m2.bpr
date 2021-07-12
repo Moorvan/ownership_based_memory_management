@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.prFile version="1">
+<org.eventb.core.prProof name="ownership_transfer_in_block/grd1/GRD" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p0"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p1"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p2"/>
+<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p3"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="blocks⊆Blocks">
+<org.eventb.core.prIdent name="Blocks" org.eventb.core.type="ℙ(Blocks)"/>
+<org.eventb.core.prIdent name="blocks" org.eventb.core.type="ℙ(Blocks)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="objects⊆Objects">
+<org.eventb.core.prIdent name="Objects" org.eventb.core.type="ℙ(Objects)"/>
+<org.eventb.core.prIdent name="objects" org.eventb.core.type="ℙ(Objects)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="vars⊆Vars">
+<org.eventb.core.prIdent name="Vars" org.eventb.core.type="ℙ(Vars)"/>
+<org.eventb.core.prIdent name="vars" org.eventb.core.type="ℙ(Vars)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="ownership_transfer_in_block/grd2/GRD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0" org.eventb.core.prSets="Blocks">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0"/>
+<org.eventb.core.prIdent name="b" org.eventb.core.type="Blocks"/>
+<org.eventb.core.prIdent name="blocks" org.eventb.core.type="ℙ(Blocks)"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="b∈blocks"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="ownership_transfer_in_block/grd3/GRD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0" org.eventb.core.prSets="Blocks">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0"/>
+<org.eventb.core.prIdent name="b" org.eventb.core.type="Blocks"/>
+<org.eventb.core.prIdent name="blocks" org.eventb.core.type="ℙ(Blocks)"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="b∈blocks"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="ownership_transfer_in_block/grd4/GRD" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p0"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p1"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p2"/>
+<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p3"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="blocks⊆Blocks">
+<org.eventb.core.prIdent name="Blocks" org.eventb.core.type="ℙ(Blocks)"/>
+<org.eventb.core.prIdent name="blocks" org.eventb.core.type="ℙ(Blocks)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="objects⊆Objects">
+<org.eventb.core.prIdent name="Objects" org.eventb.core.type="ℙ(Objects)"/>
+<org.eventb.core.prIdent name="objects" org.eventb.core.type="ℙ(Objects)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="vars⊆Vars">
+<org.eventb.core.prIdent name="Vars" org.eventb.core.type="ℙ(Vars)"/>
+<org.eventb.core.prIdent name="vars" org.eventb.core.type="ℙ(Vars)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="ownership_transfer_in_block/grd10/GRD" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="Vars">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p2">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p1"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p3"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p4"/>
+<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p5"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="v2" org.eventb.core.type="Vars"/>
+<org.eventb.core.prIdent name="vars" org.eventb.core.type="ℙ(Vars)"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="blocks⊆Blocks">
+<org.eventb.core.prIdent name="Blocks" org.eventb.core.type="ℙ(Blocks)"/>
+<org.eventb.core.prIdent name="blocks" org.eventb.core.type="ℙ(Blocks)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="objects⊆Objects">
+<org.eventb.core.prIdent name="Objects" org.eventb.core.type="ℙ(Objects)"/>
+<org.eventb.core.prIdent name="objects" org.eventb.core.type="ℙ(Objects)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="v2∉vars"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬v2∈vars"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="vars⊆Vars"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="ownership_transfer_in_block/grd6/GRD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0" org.eventb.core.prSets="Blocks,Vars">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0"/>
+<org.eventb.core.prIdent name="b" org.eventb.core.type="Blocks"/>
+<org.eventb.core.prIdent name="v1" org.eventb.core.type="Vars"/>
+<org.eventb.core.prIdent name="vars_in_block" org.eventb.core.type="ℙ(Vars×Blocks)"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="v1 ↦ b∈vars_in_block"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="ownership_transfer_in_block/grd9/GRD" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p0"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p1"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p2"/>
+<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p3"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="blocks⊆Blocks">
+<org.eventb.core.prIdent name="Blocks" org.eventb.core.type="ℙ(Blocks)"/>
+<org.eventb.core.prIdent name="blocks" org.eventb.core.type="ℙ(Blocks)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="objects⊆Objects">
+<org.eventb.core.prIdent name="Objects" org.eventb.core.type="ℙ(Objects)"/>
+<org.eventb.core.prIdent name="objects" org.eventb.core.type="ℙ(Objects)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="vars⊆Vars">
+<org.eventb.core.prIdent name="Vars" org.eventb.core.type="ℙ(Vars)"/>
+<org.eventb.core.prIdent name="vars" org.eventb.core.type="ℙ(Vars)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="ownership_transfer_in_block/act1/SIM" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p0" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p1"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p2"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p3"/>
+<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p4"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="blocks⊆Blocks">
+<org.eventb.core.prIdent name="Blocks" org.eventb.core.type="ℙ(Blocks)"/>
+<org.eventb.core.prIdent name="blocks" org.eventb.core.type="ℙ(Blocks)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="objects⊆Objects">
+<org.eventb.core.prIdent name="Objects" org.eventb.core.type="ℙ(Objects)"/>
+<org.eventb.core.prIdent name="objects" org.eventb.core.type="ℙ(Objects)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="v2∉vars">
+<org.eventb.core.prIdent name="Vars" org.eventb.core.type="ℙ(Vars)"/>
+<org.eventb.core.prIdent name="v2" org.eventb.core.type="Vars"/>
+<org.eventb.core.prIdent name="vars" org.eventb.core.type="ℙ(Vars)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="¬v2∈vars">
+<org.eventb.core.prIdent name="Vars" org.eventb.core.type="ℙ(Vars)"/>
+<org.eventb.core.prIdent name="v2" org.eventb.core.type="Vars"/>
+<org.eventb.core.prIdent name="vars" org.eventb.core.type="ℙ(Vars)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="vars⊆Vars">
+<org.eventb.core.prIdent name="Vars" org.eventb.core.type="ℙ(Vars)"/>
+<org.eventb.core.prIdent name="vars" org.eventb.core.type="ℙ(Vars)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="ownership_transfer_in_block/act2/SIM" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="Blocks,Vars">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p3">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p3" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="b" org.eventb.core.type="Blocks"/>
+<org.eventb.core.prIdent name="v1" org.eventb.core.type="Vars"/>
+<org.eventb.core.prIdent name="v2" org.eventb.core.type="Vars"/>
+<org.eventb.core.prIdent name="vars_in_block" org.eventb.core.type="ℙ(Vars×Blocks)"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="(vars_in_block ∖ {v1 ↦ b})∪{v2 ↦ b}=(vars_in_block ∖ {v1 ↦ b})∪{v2 ↦ b}"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="v2∉vars">
+<org.eventb.core.prIdent name="vars" org.eventb.core.type="ℙ(Vars)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬v2∈vars">
+<org.eventb.core.prIdent name="vars" org.eventb.core.type="ℙ(Vars)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="ownership_transfer_in_block/act3/SIM" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p0" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p1"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p2"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p3"/>
+<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p4"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="blocks⊆Blocks">
+<org.eventb.core.prIdent name="Blocks" org.eventb.core.type="ℙ(Blocks)"/>
+<org.eventb.core.prIdent name="blocks" org.eventb.core.type="ℙ(Blocks)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="objects⊆Objects">
+<org.eventb.core.prIdent name="Objects" org.eventb.core.type="ℙ(Objects)"/>
+<org.eventb.core.prIdent name="objects" org.eventb.core.type="ℙ(Objects)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="v2∉vars">
+<org.eventb.core.prIdent name="Vars" org.eventb.core.type="ℙ(Vars)"/>
+<org.eventb.core.prIdent name="v2" org.eventb.core.type="Vars"/>
+<org.eventb.core.prIdent name="vars" org.eventb.core.type="ℙ(Vars)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="¬v2∈vars">
+<org.eventb.core.prIdent name="Vars" org.eventb.core.type="ℙ(Vars)"/>
+<org.eventb.core.prIdent name="v2" org.eventb.core.type="Vars"/>
+<org.eventb.core.prIdent name="vars" org.eventb.core.type="ℙ(Vars)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="vars⊆Vars">
+<org.eventb.core.prIdent name="Vars" org.eventb.core.type="ℙ(Vars)"/>
+<org.eventb.core.prIdent name="vars" org.eventb.core.type="ℙ(Vars)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="DLF/THM" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4" org.eventb.core.prSets="Blocks,Objects,Vars">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p0">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p6"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p7"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p9">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p6" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p8"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p7" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p8"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p10"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p11"/>
+<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p12"/>
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="sl/ds" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="SELECT0" org.eventb.core.prHyps="p1,p4,p3,p8"/>
+<org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="CVC3" org.eventb.core.prGoal="p9" org.eventb.core.prHyps="p1,p4,p3,p8">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="R1000"/>
+<org.eventb.core.prString name=".config_id" org.eventb.core.prSValue="CVC3"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="blocks" org.eventb.core.type="ℙ(Blocks)"/>
+<org.eventb.core.prIdent name="objects" org.eventb.core.type="ℙ(Objects)"/>
+<org.eventb.core.prIdent name="var_object_ownership" org.eventb.core.type="ℙ(Vars×Objects)"/>
+<org.eventb.core.prIdent name="vars" org.eventb.core.type="ℙ(Vars)"/>
+<org.eventb.core.prIdent name="vars_in_block" org.eventb.core.type="ℙ(Vars×Blocks)"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="(∃b⦂Blocks·b∉blocks)∨(∃b⦂Blocks,o⦂Objects,v⦂Vars·o∉objects∧v∉vars∧b∈blocks)∨(∃b1⦂Blocks,b2⦂Blocks,o⦂Objects,v1⦂Vars,v2⦂Vars·o∈objects∧b1∈blocks∧b2∈blocks∧v1∈vars∧v2∉vars∧v1 ↦ b1∈vars_in_block∧v1 ↦ o∈var_object_ownership)∨(∃b⦂Blocks,o⦂Objects,v⦂Vars·o∈objects∧v∈vars∧b∈blocks∧v ↦ b∈vars_in_block∧v ↦ o∈var_object_ownership)∨(∃b⦂Blocks·b∈blocks)"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="var_object_ownership∈vars → objects"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="⊥∨⊥∨(∃b1⦂Blocks,b2⦂Blocks,o⦂Objects,v1⦂Vars,v2⦂Vars·o∈objects∧b1∈blocks∧b2∈blocks∧v1∈vars∧v2∉vars∧v1 ↦ b1∈vars_in_block∧v1 ↦ o∈var_object_ownership)∨⊥∨⊥"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="vars⊆Vars"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="vars_in_block∈vars → blocks"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="∃b1⦂Blocks,b2⦂Blocks,o⦂Objects,v1⦂Vars,v2⦂Vars·o∈objects∧b1∈blocks∧b2∈blocks∧v1∈vars∧¬v2∈vars∧v1 ↦ b1∈vars_in_block∧v1 ↦ o∈var_object_ownership"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="blocks=(∅ ⦂ ℙ(Blocks))⇒vars=(∅ ⦂ ℙ(Vars))∧objects=(∅ ⦂ ℙ(Objects))"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="(∃b⦂Blocks·¬b∈blocks)∨(∃b⦂Blocks,o⦂Objects,v⦂Vars·¬o∈objects∧¬v∈vars∧b∈blocks)∨(∃b⦂Blocks,o⦂Objects,v1⦂Vars,v2⦂Vars·o∈objects∧b∈blocks∧v1∈vars∧v1 ↦ b∈vars_in_block∧v1 ↦ o∈var_object_ownership∧¬v2∈vars)∨(∃b1⦂Blocks,b2⦂Blocks,o⦂Objects,v1⦂Vars,v2⦂Vars·o∈objects∧b1∈blocks∧b2∈blocks∧v1∈vars∧¬v2∈vars∧v1 ↦ b1∈vars_in_block∧v1 ↦ o∈var_object_ownership∧¬b1=b2)∨(∃b⦂Blocks,o⦂Objects,v⦂Vars·o∈objects∧v∈vars∧b∈blocks∧v ↦ b∈vars_in_block∧v ↦ o∈var_object_ownership)∨(∃b⦂Blocks·b∈blocks)"/>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="blocks⊆Blocks"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="(∃b⦂Blocks·b∉blocks)∨(∃b⦂Blocks,o⦂Objects,v⦂Vars·o∉objects∧v∉vars∧b∈blocks)∨(∃b⦂Blocks,o⦂Objects,v1⦂Vars,v2⦂Vars·o∈objects∧b∈blocks∧v1∈vars∧v1 ↦ b∈vars_in_block∧v1 ↦ o∈var_object_ownership∧v2∉vars)∨(∃b1⦂Blocks,b2⦂Blocks,o⦂Objects,v1⦂Vars,v2⦂Vars·o∈objects∧b1∈blocks∧b2∈blocks∧v1∈vars∧v2∉vars∧v1 ↦ b1∈vars_in_block∧v1 ↦ o∈var_object_ownership∧b1≠b2)∨(∃b⦂Blocks,o⦂Objects,v⦂Vars·o∈objects∧v∈vars∧b∈blocks∧v ↦ b∈vars_in_block∧v ↦ o∈var_object_ownership)∨(∃b⦂Blocks·b∈blocks)"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="objects⊆Objects"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="(∃b⦂Blocks·b∉blocks)∨(∃b⦂Blocks,o⦂Objects,v⦂Vars·o∉objects∧v∉vars∧b∈blocks)∨(∃b1⦂Blocks,b2⦂Blocks,o⦂Objects,v1⦂Vars,v2⦂Vars·o∈objects∧b1∈blocks∧b2∈blocks∧v1∈vars∧v2∉vars∧v1 ↦ b1∈vars_in_block∧v1 ↦ o∈var_object_ownership)∨(∃b⦂Blocks·b∈blocks)"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="⊥∨⊥∨(∃b1⦂Blocks,b2⦂Blocks,o⦂Objects,v1⦂Vars,v2⦂Vars·o∈objects∧b1∈blocks∧b2∈blocks∧v1∈vars∧v2∉vars∧v1 ↦ b1∈vars_in_block∧v1 ↦ o∈var_object_ownership)∨⊥"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.mngHyp"/>
+<org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.smt.core.externalSMT"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+</org.eventb.core.prProof>
+</org.eventb.core.prFile>

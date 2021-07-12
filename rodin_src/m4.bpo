@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="4">
+<org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="Blocks" org.eventb.core.type="ℙ(Blocks)"/>
+<org.eventb.core.poIdentifier name="Objects" org.eventb.core.type="ℙ(Objects)"/>
+<org.eventb.core.poIdentifier name="Vars" org.eventb.core.type="ℙ(Vars)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/ownership_based_memory_management/m4.bpo|org.eventb.core.poFile#m4|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="blocks" org.eventb.core.type="ℙ(Blocks)"/>
+<org.eventb.core.poIdentifier name="objects" org.eventb.core.type="ℙ(Objects)"/>
+<org.eventb.core.poIdentifier name="reference_in_block" org.eventb.core.type="ℙ(Vars×Blocks)"/>
+<org.eventb.core.poIdentifier name="reference_vars" org.eventb.core.type="ℙ(Vars)"/>
+<org.eventb.core.poIdentifier name="var_object_ownership" org.eventb.core.type="ℙ(Vars×Objects)"/>
+<org.eventb.core.poIdentifier name="var_object_reference" org.eventb.core.type="ℙ(Vars×Objects)"/>
+<org.eventb.core.poIdentifier name="vars" org.eventb.core.type="ℙ(Vars)"/>
+<org.eventb.core.poIdentifier name="vars_in_block" org.eventb.core.type="ℙ(Vars×Blocks)"/>
+<org.eventb.core.poPredicate name="var_object_referencf" org.eventb.core.predicate="vars⊆Vars" org.eventb.core.source="/ownership_based_memory_management/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#,"/>
+<org.eventb.core.poPredicate name="var_object_referencg" org.eventb.core.predicate="objects⊆Objects" org.eventb.core.source="/ownership_based_memory_management/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#."/>
+<org.eventb.core.poPredicate name="var_object_referench" org.eventb.core.predicate="blocks⊆Blocks" org.eventb.core.source="/ownership_based_memory_management/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#0"/>
+<org.eventb.core.poPredicate name="var_object_referenci" org.eventb.core.predicate="vars_in_block∈vars → blocks" org.eventb.core.source="/ownership_based_memory_management/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#*"/>
+<org.eventb.core.poPredicate name="var_object_referencj" org.eventb.core.predicate="var_object_ownership∈vars → objects" org.eventb.core.source="/ownership_based_memory_management/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#2"/>
+<org.eventb.core.poPredicate name="var_object_referenck" org.eventb.core.predicate="(∃b⦂Blocks·b∉blocks)∨(∃b⦂Blocks,o⦂Objects,v⦂Vars·o∉objects∧v∉vars∧b∈blocks)∨(∃b1⦂Blocks,b2⦂Blocks,o⦂Objects,v1⦂Vars,v2⦂Vars·o∈objects∧b1∈blocks∧b2∈blocks∧v1∈vars∧v2∉vars∧v1 ↦ b1∈vars_in_block∧v1 ↦ o∈var_object_ownership)∨(∃b⦂Blocks·b∈blocks)" org.eventb.core.source="/ownership_based_memory_management/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#DLF"/>
+<org.eventb.core.poPredicate name="var_object_referencl" org.eventb.core.predicate="blocks=(∅ ⦂ ℙ(Blocks))⇒vars=(∅ ⦂ ℙ(Vars))∧objects=(∅ ⦂ ℙ(Objects))" org.eventb.core.source="/ownership_based_memory_management/m1.bum|org.eventb.core.machineFile#m1|org.eventb.core.invariant#8"/>
+<org.eventb.core.poPredicate name="var_object_referencm" org.eventb.core.predicate="(∃b⦂Blocks·b∉blocks)∨(∃b⦂Blocks,o⦂Objects,v⦂Vars·o∉objects∧v∉vars∧b∈blocks)∨(∃b1⦂Blocks,b2⦂Blocks,o⦂Objects,v1⦂Vars,v2⦂Vars·o∈objects∧b1∈blocks∧b2∈blocks∧v1∈vars∧v2∉vars∧v1 ↦ b1∈vars_in_block∧v1 ↦ o∈var_object_ownership)∨(∃b⦂Blocks,o⦂Objects,v⦂Vars·o∈objects∧v∈vars∧b∈blocks∧v ↦ b∈vars_in_block∧v ↦ o∈var_object_ownership)∨(∃b⦂Blocks·b∈blocks)" org.eventb.core.source="/ownership_based_memory_management/m1.bum|org.eventb.core.machineFile#m1|org.eventb.core.invariant#DLF"/>
+<org.eventb.core.poPredicate name="var_object_referencn" org.eventb.core.predicate="(∃b⦂Blocks·b∉blocks)∨(∃b⦂Blocks,o⦂Objects,v⦂Vars·o∉objects∧v∉vars∧b∈blocks)∨(∃b⦂Blocks,o⦂Objects,v1⦂Vars,v2⦂Vars·o∈objects∧b∈blocks∧v1∈vars∧v1 ↦ b∈vars_in_block∧v1 ↦ o∈var_object_ownership∧v2∉vars)∨(∃b1⦂Blocks,b2⦂Blocks,o⦂Objects,v1⦂Vars,v2⦂Vars·o∈objects∧b1∈blocks∧b2∈blocks∧v1∈vars∧v2∉vars∧v1 ↦ b1∈vars_in_block∧v1 ↦ o∈var_object_ownership∧b1≠b2)∨(∃b⦂Blocks,o⦂Objects,v⦂Vars·o∈objects∧v∈vars∧b∈blocks∧v ↦ b∈vars_in_block∧v ↦ o∈var_object_ownership)∨(∃b⦂Blocks·b∈blocks)" org.eventb.core.source="/ownership_based_memory_management/m2.bum|org.eventb.core.machineFile#m2|org.eventb.core.invariant#DLF"/>
+<org.eventb.core.poPredicate name="var_object_referenco" org.eventb.core.predicate="reference_vars⊆Vars" org.eventb.core.source="/ownership_based_memory_management/m3.bum|org.eventb.core.machineFile#m3|org.eventb.core.invariant#:"/>
+<org.eventb.core.poPredicate name="var_object_referencp" org.eventb.core.predicate="var_object_reference∈reference_vars → objects" org.eventb.core.source="/ownership_based_memory_management/m3.bum|org.eventb.core.machineFile#m3|org.eventb.core.invariant#="/>
+<org.eventb.core.poPredicate name="var_object_referencq" org.eventb.core.predicate="reference_in_block∈reference_vars → blocks" org.eventb.core.source="/ownership_based_memory_management/m3.bum|org.eventb.core.machineFile#m3|org.eventb.core.invariant#?"/>
+<org.eventb.core.poPredicate name="var_object_referencr" org.eventb.core.predicate="vars∩reference_vars=(∅ ⦂ ℙ(Vars))" org.eventb.core.source="/ownership_based_memory_management/m3.bum|org.eventb.core.machineFile#m3|org.eventb.core.invariant#A"/>
+<org.eventb.core.poPredicate name="var_object_referencs" org.eventb.core.predicate="(∃b⦂Blocks·b∉blocks)∨(∃b⦂Blocks,o⦂Objects,v⦂Vars·o∉objects∧v∉vars∧b∈blocks∧v∉reference_vars)∨(∃b⦂Blocks,o⦂Objects,v1⦂Vars,v2⦂Vars·o∈objects∧b∈blocks∧v1∈vars∧v1 ↦ b∈vars_in_block∧v1 ↦ o∈var_object_ownership∧v2∉vars∧v2∉reference_vars)∨(∃b1⦂Blocks,b2⦂Blocks,o⦂Objects,v1⦂Vars,v2⦂Vars·o∈objects∧b1∈blocks∧b2∈blocks∧v1∈vars∧v2∉vars∧v1 ↦ b1∈vars_in_block∧v1 ↦ o∈var_object_ownership∧b1≠b2∧v2∉reference_vars)∨(∃b⦂Blocks,b1⦂Blocks,o⦂Objects,rv⦂Vars,v⦂Vars·o∈objects∧v∈vars∧b∈blocks∧b1∈blocks∧rv∉vars∧rv∉reference_vars∧v ↦ b∈vars_in_block∧v ↦ o∈var_object_ownership)∨(∃b⦂Blocks,o⦂Objects,v⦂Vars·o∈objects∧v∈vars∧b∈blocks∧v ↦ b∈vars_in_block∧v ↦ o∈var_object_ownership)∨(∃o⦂Objects,rb⦂Blocks,rv⦂Vars·o∈objects∧rv∈reference_vars∧rb∈blocks∧rv ↦ rb∈reference_in_block∧rv ↦ o∈var_object_reference)∨(∃b⦂Blocks·b∈blocks)" org.eventb.core.source="/ownership_based_memory_management/m3.bum|org.eventb.core.machineFile#m3|org.eventb.core.invariant#DLF"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTIDENTvar_object_referencf" org.eventb.core.parentSet="/ownership_based_memory_management/m4.bpo|org.eventb.core.poFile#m4|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="reference_vars'" org.eventb.core.type="ℙ(Vars)"/>
+<org.eventb.core.poIdentifier name="vars'" org.eventb.core.type="ℙ(Vars)"/>
+<org.eventb.core.poIdentifier name="var_object_reference'" org.eventb.core.type="ℙ(Vars×Objects)"/>
+<org.eventb.core.poIdentifier name="blocks'" org.eventb.core.type="ℙ(Blocks)"/>
+<org.eventb.core.poIdentifier name="reference_in_block'" org.eventb.core.type="ℙ(Vars×Blocks)"/>
+<org.eventb.core.poIdentifier name="objects'" org.eventb.core.type="ℙ(Objects)"/>
+<org.eventb.core.poIdentifier name="vars_in_block'" org.eventb.core.type="ℙ(Vars×Blocks)"/>
+<org.eventb.core.poIdentifier name="var_object_ownership'" org.eventb.core.type="ℙ(Vars×Objects)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPvar_object_referencf" org.eventb.core.parentSet="/ownership_based_memory_management/m4.bpo|org.eventb.core.poFile#m4|org.eventb.core.poPredicateSet#EVTIDENTvar_object_referencf" org.eventb.core.poStamp="0"/>
+<org.eventb.core.poPredicateSet name="EVTIDENTvar_object_referencg" org.eventb.core.parentSet="/ownership_based_memory_management/m4.bpo|org.eventb.core.poFile#m4|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="b" org.eventb.core.type="Blocks"/>
+<org.eventb.core.poIdentifier name="blocks'" org.eventb.core.type="ℙ(Blocks)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPvar_object_referencg" org.eventb.core.parentSet="/ownership_based_memory_management/m4.bpo|org.eventb.core.poFile#m4|org.eventb.core.poPredicateSet#EVTIDENTvar_object_referencg" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="b∉blocks" org.eventb.core.source="/ownership_based_memory_management/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#3|org.eventb.core.guard#("/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTIDENTvar_object_referench" org.eventb.core.parentSet="/ownership_based_memory_management/m4.bpo|org.eventb.core.poFile#m4|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="b" org.eventb.core.type="Blocks"/>
+<org.eventb.core.poIdentifier name="v" org.eventb.core.type="Vars"/>
+<org.eventb.core.poIdentifier name="vars'" org.eventb.core.type="ℙ(Vars)"/>
+<org.eventb.core.poIdentifier name="o" org.eventb.core.type="Objects"/>
+<org.eventb.core.poIdentifier name="objects'" org.eventb.core.type="ℙ(Objects)"/>
+<org.eventb.core.poIdentifier name="vars_in_block'" org.eventb.core.type="ℙ(Vars×Blocks)"/>
+<org.eventb.core.poIdentifier name="var_object_ownership'" org.eventb.core.type="ℙ(Vars×Objects)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPvar_object_referench" org.eventb.core.parentSet="/ownership_based_memory_management/m4.bpo|org.eventb.core.poFile#m4|org.eventb.core.poPredicateSet#EVTIDENTvar_object_referench" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="o∉objects" org.eventb.core.source="/ownership_based_memory_management/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#4|org.eventb.core.guard#("/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="v∉vars" org.eventb.core.source="/ownership_based_memory_management/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#4|org.eventb.core.guard#+"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="b∈blocks" org.eventb.core.source="/ownership_based_memory_management/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#4|org.eventb.core.guard#-"/>
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="v∉reference_vars" org.eventb.core.source="/ownership_based_memory_management/m3.bum|org.eventb.core.machineFile#m3|org.eventb.core.event#4|org.eventb.core.guard#("/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTIDENTvar_object_referenci" org.eventb.core.parentSet="/ownership_based_memory_management/m4.bpo|org.eventb.core.poFile#m4|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="b" org.eventb.core.type="Blocks"/>
+<org.eventb.core.poIdentifier name="vars'" org.eventb.core.type="ℙ(Vars)"/>
+<org.eventb.core.poIdentifier name="o" org.eventb.core.type="Objects"/>
+<org.eventb.core.poIdentifier name="v1" org.eventb.core.type="Vars"/>
+<org.eventb.core.poIdentifier name="vars_in_block'" org.eventb.core.type="ℙ(Vars×Blocks)"/>
+<org.eventb.core.poIdentifier name="v2" org.eventb.core.type="Vars"/>
+<org.eventb.core.poIdentifier name="var_object_ownership'" org.eventb.core.type="ℙ(Vars×Objects)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPvar_object_referenci" org.eventb.core.parentSet="/ownership_based_memory_management/m4.bpo|org.eventb.core.poFile#m4|org.eventb.core.poPredicateSet#EVTIDENTvar_object_referenci" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="o∈objects" org.eventb.core.source="/ownership_based_memory_management/m2.bum|org.eventb.core.machineFile#m2|org.eventb.core.event#8|org.eventb.core.guard#)"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="b∈blocks" org.eventb.core.source="/ownership_based_memory_management/m2.bum|org.eventb.core.machineFile#m2|org.eventb.core.event#8|org.eventb.core.guard#-"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="v1∈vars" org.eventb.core.source="/ownership_based_memory_management/m2.bum|org.eventb.core.machineFile#m2|org.eventb.core.event#8|org.eventb.core.guard#."/>
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="v1 ↦ b∈vars_in_block" org.eventb.core.source="/ownership_based_memory_management/m2.bum|org.eventb.core.machineFile#m2|org.eventb.core.event#8|org.eventb.core.guard#\/"/>
+<org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="v1 ↦ o∈var_object_ownership" org.eventb.core.source="/ownership_based_memory_management/m2.bum|org.eventb.core.machineFile#m2|org.eventb.core.event#8|org.eventb.core.guard#0"/>
+<org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="v2∉vars" org.eventb.core.source="/ownership_based_memory_management/m2.bum|org.eventb.core.machineFile#m2|org.eventb.core.event#8|org.eventb.core.guard#1"/>
+<org.eventb.core.poPredicate name="PRD6" org.eventb.core.predicate="v2∉reference_vars" org.eventb.core.source="/ownership_based_memory_management/m3.bum|org.eventb.core.machineFile#m3|org.eventb.core.event#5|org.eventb.core.guard#("/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTIDENTvar_object_referencj" org.eventb.core.parentSet="/ownership_based_memory_management/m4.bpo|org.eventb.core.poFile#m4|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="b1" org.eventb.core.type="Blocks"/>
+<org.eventb.core.poIdentifier name="b2" org.eventb.core.type="Blocks"/>
+<org.eventb.core.poIdentifier name="vars'" org.eventb.core.type="ℙ(Vars)"/>
+<org.eventb.core.poIdentifier name="o" org.eventb.core.type="Objects"/>
+<org.eventb.core.poIdentifier name="v1" org.eventb.core.type="Vars"/>
+<org.eventb.core.poIdentifier name="vars_in_block'" org.eventb.core.type="ℙ(Vars×Blocks)"/>
+<org.eventb.core.poIdentifier name="v2" org.eventb.core.type="Vars"/>
+<org.eventb.core.poIdentifier name="var_object_ownership'" org.eventb.core.type="ℙ(Vars×Objects)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPvar_object_referencj" org.eventb.core.parentSet="/ownership_based_memory_management/m4.bpo|org.eventb.core.poFile#m4|org.eventb.core.poPredicateSet#EVTIDENTvar_object_referencj" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="o∈objects" org.eventb.core.source="/ownership_based_memory_management/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#6|org.eventb.core.guard#,"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="b1∈blocks" org.eventb.core.source="/ownership_based_memory_management/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#6|org.eventb.core.guard#-"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="b2∈blocks" org.eventb.core.source="/ownership_based_memory_management/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#6|org.eventb.core.guard#."/>
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="v1∈vars" org.eventb.core.source="/ownership_based_memory_management/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#6|org.eventb.core.guard#\/"/>
+<org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="v2∉vars" org.eventb.core.source="/ownership_based_memory_management/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#6|org.eventb.core.guard#7"/>
+<org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="v1 ↦ b1∈vars_in_block" org.eventb.core.source="/ownership_based_memory_management/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#6|org.eventb.core.guard#1"/>
+<org.eventb.core.poPredicate name="PRD6" org.eventb.core.predicate="v1 ↦ o∈var_object_ownership" org.eventb.core.source="/ownership_based_memory_management/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#6|org.eventb.core.guard#5"/>
+<org.eventb.core.poPredicate name="PRD7" org.eventb.core.predicate="b1≠b2" org.eventb.core.source="/ownership_based_memory_management/m2.bum|org.eventb.core.machineFile#m2|org.eventb.core.event#5|org.eventb.core.guard#("/>
+<org.eventb.core.poPredicate name="PRD8" org.eventb.core.predicate="v2∉reference_vars" org.eventb.core.source="/ownership_based_memory_management/m3.bum|org.eventb.core.machineFile#m3|org.eventb.core.event#6|org.eventb.core.guard#("/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="create_reference_in_block/grd4/GRD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Guard strengthening (split)" org.eventb.core.poStamp="4">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/ownership_based_memory_management/m4.bpo|org.eventb.core.poFile#m4|org.eventb.core.poPredicateSet#EVTALLHYPvar_object_referenck"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="b∈blocks" org.eventb.core.source="/ownership_based_memory_management/m3.bum|org.eventb.core.machineFile#m3|org.eventb.core.event#@|org.eventb.core.guard#\/"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/ownership_based_memory_management/m3.bum|org.eventb.core.machineFile#m3|org.eventb.core.event#@"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/ownership_based_memory_management/m3.bum|org.eventb.core.machineFile#m3|org.eventb.core.event#@|org.eventb.core.guard#\/"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/ownership_based_memory_management/m4.bum|org.eventb.core.machineFile#m4|org.eventb.core.event#I"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/ownership_based_memory_management/m4.bpo|org.eventb.core.poFile#m4|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/ownership_based_memory_management/m4.bpo|org.eventb.core.poFile#m4|org.eventb.core.poSequent#create_reference_in_block\/grd4\/GRD|org.eventb.core.poPredicateSet#SEQHYP"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="create_reference_in_block/act2/SIM" org.eventb.core.accurate="true" org.eventb.core.poDesc="Action simulation" org.eventb.core.poStamp="4">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/ownership_based_memory_management/m4.bpo|org.eventb.core.poFile#m4|org.eventb.core.poPredicateSet#EVTALLHYPvar_object_referenck"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="reference_in_block∪{rv ↦ b}=reference_in_block∪{rv ↦ b}" org.eventb.core.source="/ownership_based_memory_management/m3.bum|org.eventb.core.machineFile#m3|org.eventb.core.event#@|org.eventb.core.action#5"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/ownership_based_memory_management/m3.bum|org.eventb.core.machineFile#m3|org.eventb.core.event#@"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/ownership_based_memory_management/m3.bum|org.eventb.core.machineFile#m3|org.eventb.core.event#@|org.eventb.core.action#5"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/ownership_based_memory_management/m4.bum|org.eventb.core.machineFile#m4|org.eventb.core.event#I"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/ownership_based_memory_management/m4.bpo|org.eventb.core.poFile#m4|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/ownership_based_memory_management/m4.bpo|org.eventb.core.poFile#m4|org.eventb.core.poSequent#create_reference_in_block\/act2\/SIM|org.eventb.core.poPredicateSet#SEQHYP"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTvar_object_referenck" org.eventb.core.parentSet="/ownership_based_memory_management/m4.bpo|org.eventb.core.poFile#m4|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="b1" org.eventb.core.type="Blocks"/>
+<org.eventb.core.poIdentifier name="b" org.eventb.core.type="Blocks"/>
+<org.eventb.core.poIdentifier name="rv" org.eventb.core.type="Vars"/>
+<org.eventb.core.poIdentifier name="reference_vars'" org.eventb.core.type="ℙ(Vars)"/>
+<org.eventb.core.poIdentifier name="v" org.eventb.core.type="Vars"/>
+<org.eventb.core.poIdentifier name="o" org.eventb.core.type="Objects"/>
+<org.eventb.core.poIdentifier name="var_object_reference'" org.eventb.core.type="ℙ(Vars×Objects)"/>
+<org.eventb.core.poIdentifier name="reference_in_block'" org.eventb.core.type="ℙ(Vars×Blocks)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPvar_object_referenck" org.eventb.core.parentSet="/ownership_based_memory_management/m4.bpo|org.eventb.core.poFile#m4|org.eventb.core.poPredicateSet#EVTIDENTvar_object_referenck" org.eventb.core.poStamp="3">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="o∈objects" org.eventb.core.source="/ownership_based_memory_management/m4.bum|org.eventb.core.machineFile#m4|org.eventb.core.event#I|org.eventb.core.guard#,"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="v∈vars" org.eventb.core.source="/ownership_based_memory_management/m4.bum|org.eventb.core.machineFile#m4|org.eventb.core.event#I|org.eventb.core.guard#-"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="b∈blocks" org.eventb.core.source="/ownership_based_memory_management/m4.bum|org.eventb.core.machineFile#m4|org.eventb.core.event#I|org.eventb.core.guard#."/>
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="rv∉vars" org.eventb.core.source="/ownership_based_memory_management/m4.bum|org.eventb.core.machineFile#m4|org.eventb.core.event#I|org.eventb.core.guard#0"/>
+<org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="rv∉reference_vars" org.eventb.core.source="/ownership_based_memory_management/m4.bum|org.eventb.core.machineFile#m4|org.eventb.core.event#I|org.eventb.core.guard#1"/>
+<org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="v ↦ o∈var_object_ownership" org.eventb.core.source="/ownership_based_memory_management/m4.bum|org.eventb.core.machineFile#m4|org.eventb.core.event#I|org.eventb.core.guard#4"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTIDENTvar_object_referencl" org.eventb.core.parentSet="/ownership_based_memory_management/m4.bpo|org.eventb.core.poFile#m4|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="1">
+<org.eventb.core.poIdentifier name="b1" org.eventb.core.type="Blocks"/>
+<org.eventb.core.poIdentifier name="b" org.eventb.core.type="Blocks"/>
+<org.eventb.core.poIdentifier name="rv" org.eventb.core.type="Vars"/>
+<org.eventb.core.poIdentifier name="reference_vars'" org.eventb.core.type="ℙ(Vars)"/>
+<org.eventb.core.poIdentifier name="v" org.eventb.core.type="Vars"/>
+<org.eventb.core.poIdentifier name="o" org.eventb.core.type="Objects"/>
+<org.eventb.core.poIdentifier name="var_object_reference'" org.eventb.core.type="ℙ(Vars×Objects)"/>
+<org.eventb.core.poIdentifier name="reference_in_block'" org.eventb.core.type="ℙ(Vars×Blocks)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPvar_object_referencl" org.eventb.core.parentSet="/ownership_based_memory_management/m4.bpo|org.eventb.core.poFile#m4|org.eventb.core.poPredicateSet#EVTIDENTvar_object_referencl" org.eventb.core.poStamp="3">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="o∈objects" org.eventb.core.source="/ownership_based_memory_management/m3.bum|org.eventb.core.machineFile#m3|org.eventb.core.event#@|org.eventb.core.guard#,"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="v∈vars" org.eventb.core.source="/ownership_based_memory_management/m3.bum|org.eventb.core.machineFile#m3|org.eventb.core.event#@|org.eventb.core.guard#-"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="b∈blocks" org.eventb.core.source="/ownership_based_memory_management/m3.bum|org.eventb.core.machineFile#m3|org.eventb.core.event#@|org.eventb.core.guard#."/>
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="b1∈blocks" org.eventb.core.source="/ownership_based_memory_management/m3.bum|org.eventb.core.machineFile#m3|org.eventb.core.event#@|org.eventb.core.guard#\/"/>
+<org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="rv∉vars" org.eventb.core.source="/ownership_based_memory_management/m3.bum|org.eventb.core.machineFile#m3|org.eventb.core.event#@|org.eventb.core.guard#0"/>
+<org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="rv∉reference_vars" org.eventb.core.source="/ownership_based_memory_management/m3.bum|org.eventb.core.machineFile#m3|org.eventb.core.event#@|org.eventb.core.guard#1"/>
+<org.eventb.core.poPredicate name="PRD6" org.eventb.core.predicate="v ↦ o∈var_object_ownership" org.eventb.core.source="/ownership_based_memory_management/m3.bum|org.eventb.core.machineFile#m3|org.eventb.core.event#@|org.eventb.core.guard#4"/>
+<org.eventb.core.poPredicate name="PRD7" org.eventb.core.predicate="b≠b1" org.eventb.core.source="/ownership_based_memory_management/m4.bum|org.eventb.core.machineFile#m4|org.eventb.core.event#D|org.eventb.core.guard#("/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="create_reference_when_return/grd10/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="3">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/ownership_based_memory_management/m4.bpo|org.eventb.core.poFile#m4|org.eventb.core.poPredicateSet#EVTHYPvar_object_referencm\/"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="v∈dom(vars_in_block)∧vars_in_block∈Vars ⇸ Blocks" org.eventb.core.source="/ownership_based_memory_management/m4.bum|org.eventb.core.machineFile#m4|org.eventb.core.event#H|org.eventb.core.guard#8"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/ownership_based_memory_management/m4.bum|org.eventb.core.machineFile#m4|org.eventb.core.event#H|org.eventb.core.guard#8"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/ownership_based_memory_management/m4.bpo|org.eventb.core.poFile#m4|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/ownership_based_memory_management/m4.bpo|org.eventb.core.poFile#m4|org.eventb.core.poPredicateSet#EVTHYPvar_object_referencm\/"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTvar_object_referencm" org.eventb.core.parentSet="/ownership_based_memory_management/m4.bpo|org.eventb.core.poFile#m4|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="3">
+<org.eventb.core.poIdentifier name="b1" org.eventb.core.type="Blocks"/>
+<org.eventb.core.poIdentifier name="b" org.eventb.core.type="Blocks"/>
+<org.eventb.core.poIdentifier name="rv" org.eventb.core.type="Vars"/>
+<org.eventb.core.poIdentifier name="reference_vars'" org.eventb.core.type="ℙ(Vars)"/>
+<org.eventb.core.poIdentifier name="v" org.eventb.core.type="Vars"/>
+<org.eventb.core.poIdentifier name="o" org.eventb.core.type="Objects"/>
+<org.eventb.core.poIdentifier name="var_object_reference'" org.eventb.core.type="ℙ(Vars×Objects)"/>
+<org.eventb.core.poIdentifier name="reference_in_block'" org.eventb.core.type="ℙ(Vars×Blocks)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTHYPvar_object_referencm/" org.eventb.core.parentSet="/ownership_based_memory_management/m4.bpo|org.eventb.core.poFile#m4|org.eventb.core.poPredicateSet#EVTIDENTvar_object_referencm" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="o∈objects" org.eventb.core.source="/ownership_based_memory_management/m4.bum|org.eventb.core.machineFile#m4|org.eventb.core.event#H|org.eventb.core.guard#,"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="v∈vars" org.eventb.core.source="/ownership_based_memory_management/m4.bum|org.eventb.core.machineFile#m4|org.eventb.core.event#H|org.eventb.core.guard#-"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="b∈blocks" org.eventb.core.source="/ownership_based_memory_management/m4.bum|org.eventb.core.machineFile#m4|org.eventb.core.event#H|org.eventb.core.guard#."/>
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="b1∈blocks" org.eventb.core.source="/ownership_based_memory_management/m4.bum|org.eventb.core.machineFile#m4|org.eventb.core.event#H|org.eventb.core.guard#\/"/>
+<org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="b≠b1" org.eventb.core.source="/ownership_based_memory_management/m4.bum|org.eventb.core.machineFile#m4|org.eventb.core.event#H|org.eventb.core.guard#7"/>
+<org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="rv∉vars" org.eventb.core.source="/ownership_based_memory_management/m4.bum|org.eventb.core.machineFile#m4|org.eventb.core.event#H|org.eventb.core.guard#0"/>
+<org.eventb.core.poPredicate name="PRD6" org.eventb.core.predicate="rv∉reference_vars" org.eventb.core.source="/ownership_based_memory_management/m4.bum|org.eventb.core.machineFile#m4|org.eventb.core.event#H|org.eventb.core.guard#1"/>
+<org.eventb.core.poPredicate name="PRD7" org.eventb.core.predicate="v ↦ o∈var_object_ownership" org.eventb.core.source="/ownership_based_memory_management/m4.bum|org.eventb.core.machineFile#m4|org.eventb.core.event#H|org.eventb.core.guard#4"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPvar_object_referencm" org.eventb.core.parentSet="/ownership_based_memory_management/m4.bpo|org.eventb.core.poFile#m4|org.eventb.core.poPredicateSet#EVTHYPvar_object_referencm\/" org.eventb.core.poStamp="3">
+<org.eventb.core.poPredicate name="PRD8" org.eventb.core.predicate="vars_in_block(v)=b1" org.eventb.core.source="/ownership_based_memory_management/m4.bum|org.eventb.core.machineFile#m4|org.eventb.core.event#H|org.eventb.core.guard#8"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTIDENTvar_object_referencn" org.eventb.core.parentSet="/ownership_based_memory_management/m4.bpo|org.eventb.core.poFile#m4|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="3">
+<org.eventb.core.poIdentifier name="b" org.eventb.core.type="Blocks"/>
+<org.eventb.core.poIdentifier name="v" org.eventb.core.type="Vars"/>
+<org.eventb.core.poIdentifier name="o" org.eventb.core.type="Objects"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPvar_object_referencn" org.eventb.core.parentSet="/ownership_based_memory_management/m4.bpo|org.eventb.core.poFile#m4|org.eventb.core.poPredicateSet#EVTIDENTvar_object_referencn" org.eventb.core.poStamp="3">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="o∈objects" org.eventb.core.source="/ownership_based_memory_management/m1.bum|org.eventb.core.machineFile#m1|org.eventb.core.event#7|org.eventb.core.guard#*"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="v∈vars" org.eventb.core.source="/ownership_based_memory_management/m1.bum|org.eventb.core.machineFile#m1|org.eventb.core.event#7|org.eventb.core.guard#+"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="b∈blocks" org.eventb.core.source="/ownership_based_memory_management/m1.bum|org.eventb.core.machineFile#m1|org.eventb.core.event#7|org.eventb.core.guard#,"/>
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="v ↦ b∈vars_in_block" org.eventb.core.source="/ownership_based_memory_management/m1.bum|org.eventb.core.machineFile#m1|org.eventb.core.event#7|org.eventb.core.guard#-"/>
+<org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="v ↦ o∈var_object_ownership" org.eventb.core.source="/ownership_based_memory_management/m1.bum|org.eventb.core.machineFile#m1|org.eventb.core.event#7|org.eventb.core.guard#."/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTIDENTvar_object_referenco" org.eventb.core.parentSet="/ownership_based_memory_management/m4.bpo|org.eventb.core.poFile#m4|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="3">
+<org.eventb.core.poIdentifier name="rv" org.eventb.core.type="Vars"/>
+<org.eventb.core.poIdentifier name="o" org.eventb.core.type="Objects"/>
+<org.eventb.core.poIdentifier name="rb" org.eventb.core.type="Blocks"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPvar_object_referenco" org.eventb.core.parentSet="/ownership_based_memory_management/m4.bpo|org.eventb.core.poFile#m4|org.eventb.core.poPredicateSet#EVTIDENTvar_object_referenco" org.eventb.core.poStamp="3">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="o∈objects" org.eventb.core.source="/ownership_based_memory_management/m3.bum|org.eventb.core.machineFile#m3|org.eventb.core.event#B|org.eventb.core.guard#'"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="rv∈reference_vars" org.eventb.core.source="/ownership_based_memory_management/m3.bum|org.eventb.core.machineFile#m3|org.eventb.core.event#B|org.eventb.core.guard#)"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="rb∈blocks" org.eventb.core.source="/ownership_based_memory_management/m3.bum|org.eventb.core.machineFile#m3|org.eventb.core.event#B|org.eventb.core.guard#-"/>
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="rv ↦ rb∈reference_in_block" org.eventb.core.source="/ownership_based_memory_management/m3.bum|org.eventb.core.machineFile#m3|org.eventb.core.event#B|org.eventb.core.guard#."/>
+<org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="rv ↦ o∈var_object_reference" org.eventb.core.source="/ownership_based_memory_management/m3.bum|org.eventb.core.machineFile#m3|org.eventb.core.event#B|org.eventb.core.guard#\/"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTIDENTvar_object_referencp" org.eventb.core.parentSet="/ownership_based_memory_management/m4.bpo|org.eventb.core.poFile#m4|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="b" org.eventb.core.type="Blocks"/>
+<org.eventb.core.poIdentifier name="reference_vars'" org.eventb.core.type="ℙ(Vars)"/>
+<org.eventb.core.poIdentifier name="vars'" org.eventb.core.type="ℙ(Vars)"/>
+<org.eventb.core.poIdentifier name="var_object_reference'" org.eventb.core.type="ℙ(Vars×Objects)"/>
+<org.eventb.core.poIdentifier name="blocks'" org.eventb.core.type="ℙ(Blocks)"/>
+<org.eventb.core.poIdentifier name="reference_in_block'" org.eventb.core.type="ℙ(Vars×Blocks)"/>
+<org.eventb.core.poIdentifier name="objects'" org.eventb.core.type="ℙ(Objects)"/>
+<org.eventb.core.poIdentifier name="vars_in_block'" org.eventb.core.type="ℙ(Vars×Blocks)"/>
+<org.eventb.core.poIdentifier name="var_object_ownership'" org.eventb.core.type="ℙ(Vars×Objects)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPvar_object_referencp" org.eventb.core.parentSet="/ownership_based_memory_management/m4.bpo|org.eventb.core.poFile#m4|org.eventb.core.poPredicateSet#EVTIDENTvar_object_referencp" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="b∈blocks" org.eventb.core.source="/ownership_based_memory_management/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#5|org.eventb.core.guard#)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/ownership_based_memory_management/m4.bpo|org.eventb.core.poFile#m4|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0"/>
+</org.eventb.core.poFile>

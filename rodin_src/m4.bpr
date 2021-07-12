@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.prFile version="1">
+<org.eventb.core.prProof name="create_reference_when_return/grd10/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2" org.eventb.core.prSets="Blocks,Vars">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p4"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p6"/>
+<org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p7" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p8"/>
+<org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p9" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p10"/>
+<org.eventb.core.prHypAction name="REWRITE4" org.eventb.core.prHidden="p11" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p12"/>
+<org.eventb.core.prHypAction name="REWRITE5" org.eventb.core.prHidden="p13" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p14"/>
+<org.eventb.core.prHypAction name="REWRITE6" org.eventb.core.prHidden="p15" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p16"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p17"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p18"/>
+<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p19"/>
+<org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p20"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∧ goal" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p21">
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="total function dom substitution in goal" org.eventb.core.prGoal="p21" org.eventb.core.prHyps="p1">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p2">
+<org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p2" org.eventb.core.prHyps="p2"/>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue="1"/>
+<org.eventb.core.prExprRef name=".subst" org.eventb.core.prRef="e0"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p22">
+<org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p22" org.eventb.core.prHyps="p1"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="blocks" org.eventb.core.type="ℙ(Blocks)"/>
+<org.eventb.core.prIdent name="v" org.eventb.core.type="Vars"/>
+<org.eventb.core.prIdent name="vars" org.eventb.core.type="ℙ(Vars)"/>
+<org.eventb.core.prIdent name="vars_in_block" org.eventb.core.type="ℙ(Vars×Blocks)"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="(∃b⦂Blocks·b∉blocks)∨(∃b⦂Blocks,o⦂Objects,v⦂Vars·o∉objects∧v∉vars∧b∈blocks)∨(∃b1⦂Blocks,b2⦂Blocks,o⦂Objects,v1⦂Vars,v2⦂Vars·o∈objects∧b1∈blocks∧b2∈blocks∧v1∈vars∧v2∉vars∧v1 ↦ b1∈vars_in_block∧v1 ↦ o∈var_object_ownership)∨(∃b⦂Blocks,o⦂Objects,v⦂Vars·o∈objects∧v∈vars∧b∈blocks∧v ↦ b∈vars_in_block∧v ↦ o∈var_object_ownership)∨(∃b⦂Blocks·b∈blocks)">
+<org.eventb.core.prIdent name="Objects" org.eventb.core.type="ℙ(Objects)"/>
+<org.eventb.core.prIdent name="objects" org.eventb.core.type="ℙ(Objects)"/>
+<org.eventb.core.prIdent name="var_object_ownership" org.eventb.core.type="ℙ(Vars×Objects)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="¬b=b1">
+<org.eventb.core.prIdent name="b" org.eventb.core.type="Blocks"/>
+<org.eventb.core.prIdent name="b1" org.eventb.core.type="Blocks"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="v∈dom(vars_in_block)∧vars_in_block∈Vars ⇸ Blocks"/>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="¬rv∈vars">
+<org.eventb.core.prIdent name="rv" org.eventb.core.type="Vars"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="rv∉vars">
+<org.eventb.core.prIdent name="rv" org.eventb.core.type="Vars"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="¬rv∈reference_vars">
+<org.eventb.core.prIdent name="reference_vars" org.eventb.core.type="ℙ(Vars)"/>
+<org.eventb.core.prIdent name="rv" org.eventb.core.type="Vars"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p20" org.eventb.core.predicate="reference_vars⊆Vars">
+<org.eventb.core.prIdent name="reference_vars" org.eventb.core.type="ℙ(Vars)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p21" org.eventb.core.predicate="v∈dom(vars_in_block)"/>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="rv∉reference_vars">
+<org.eventb.core.prIdent name="reference_vars" org.eventb.core.type="ℙ(Vars)"/>
+<org.eventb.core.prIdent name="rv" org.eventb.core.type="Vars"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p17" org.eventb.core.predicate="vars⊆Vars"/>
+<org.eventb.core.prPred name="p22" org.eventb.core.predicate="vars_in_block∈Vars ⇸ Blocks"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="(∃b⦂Blocks·b∉blocks)∨(∃b⦂Blocks,o⦂Objects,v⦂Vars·o∉objects∧v∉vars∧b∈blocks∧v∉reference_vars)∨(∃b⦂Blocks,o⦂Objects,v1⦂Vars,v2⦂Vars·o∈objects∧b∈blocks∧v1∈vars∧v1 ↦ b∈vars_in_block∧v1 ↦ o∈var_object_ownership∧v2∉vars∧v2∉reference_vars)∨(∃b1⦂Blocks,b2⦂Blocks,o⦂Objects,v1⦂Vars,v2⦂Vars·o∈objects∧b1∈blocks∧b2∈blocks∧v1∈vars∧v2∉vars∧v1 ↦ b1∈vars_in_block∧v1 ↦ o∈var_object_ownership∧b1≠b2∧v2∉reference_vars)∨(∃b⦂Blocks,b1⦂Blocks,o⦂Objects,rv⦂Vars,v⦂Vars·o∈objects∧v∈vars∧b∈blocks∧b1∈blocks∧rv∉vars∧rv∉reference_vars∧v ↦ b∈vars_in_block∧v ↦ o∈var_object_ownership)∨(∃b⦂Blocks,o⦂Objects,v⦂Vars·o∈objects∧v∈vars∧b∈blocks∧v ↦ b∈vars_in_block∧v ↦ o∈var_object_ownership)∨(∃o⦂Objects,rb⦂Blocks,rv⦂Vars·o∈objects∧rv∈reference_vars∧rb∈blocks∧rv ↦ rb∈reference_in_block∧rv ↦ o∈var_object_reference)∨(∃b⦂Blocks·b∈blocks)">
+<org.eventb.core.prIdent name="Objects" org.eventb.core.type="ℙ(Objects)"/>
+<org.eventb.core.prIdent name="objects" org.eventb.core.type="ℙ(Objects)"/>
+<org.eventb.core.prIdent name="reference_in_block" org.eventb.core.type="ℙ(Vars×Blocks)"/>
+<org.eventb.core.prIdent name="reference_vars" org.eventb.core.type="ℙ(Vars)"/>
+<org.eventb.core.prIdent name="var_object_ownership" org.eventb.core.type="ℙ(Vars×Objects)"/>
+<org.eventb.core.prIdent name="var_object_reference" org.eventb.core.type="ℙ(Vars×Objects)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="vars_in_block∈vars → blocks"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="(∃b⦂Blocks·¬b∈blocks)∨(∃b⦂Blocks,o⦂Objects,v⦂Vars·¬o∈objects∧¬v∈vars∧b∈blocks)∨(∃b1⦂Blocks,b2⦂Blocks,o⦂Objects,v1⦂Vars,v2⦂Vars·o∈objects∧b1∈blocks∧b2∈blocks∧v1∈vars∧¬v2∈vars∧v1 ↦ b1∈vars_in_block∧v1 ↦ o∈var_object_ownership)∨(∃b⦂Blocks,o⦂Objects,v⦂Vars·o∈objects∧v∈vars∧b∈blocks∧v ↦ b∈vars_in_block∧v ↦ o∈var_object_ownership)∨(∃b⦂Blocks·b∈blocks)">
+<org.eventb.core.prIdent name="Objects" org.eventb.core.type="ℙ(Objects)"/>
+<org.eventb.core.prIdent name="objects" org.eventb.core.type="ℙ(Objects)"/>
+<org.eventb.core.prIdent name="var_object_ownership" org.eventb.core.type="ℙ(Vars×Objects)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="(∃b⦂Blocks·¬b∈blocks)∨(∃b⦂Blocks,o⦂Objects,v⦂Vars·¬o∈objects∧¬v∈vars∧b∈blocks)∨(∃b⦂Blocks,o⦂Objects,v1⦂Vars,v2⦂Vars·o∈objects∧b∈blocks∧v1∈vars∧v1 ↦ b∈vars_in_block∧v1 ↦ o∈var_object_ownership∧¬v2∈vars)∨(∃b1⦂Blocks,b2⦂Blocks,o⦂Objects,v1⦂Vars,v2⦂Vars·o∈objects∧b1∈blocks∧b2∈blocks∧v1∈vars∧¬v2∈vars∧v1 ↦ b1∈vars_in_block∧v1 ↦ o∈var_object_ownership∧¬b1=b2)∨(∃b⦂Blocks,o⦂Objects,v⦂Vars·o∈objects∧v∈vars∧b∈blocks∧v ↦ b∈vars_in_block∧v ↦ o∈var_object_ownership)∨(∃b⦂Blocks·b∈blocks)">
+<org.eventb.core.prIdent name="Objects" org.eventb.core.type="ℙ(Objects)"/>
+<org.eventb.core.prIdent name="objects" org.eventb.core.type="ℙ(Objects)"/>
+<org.eventb.core.prIdent name="var_object_ownership" org.eventb.core.type="ℙ(Vars×Objects)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p19" org.eventb.core.predicate="blocks⊆Blocks"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="(∃b⦂Blocks·b∉blocks)∨(∃b⦂Blocks,o⦂Objects,v⦂Vars·o∉objects∧v∉vars∧b∈blocks)∨(∃b⦂Blocks,o⦂Objects,v1⦂Vars,v2⦂Vars·o∈objects∧b∈blocks∧v1∈vars∧v1 ↦ b∈vars_in_block∧v1 ↦ o∈var_object_ownership∧v2∉vars)∨(∃b1⦂Blocks,b2⦂Blocks,o⦂Objects,v1⦂Vars,v2⦂Vars·o∈objects∧b1∈blocks∧b2∈blocks∧v1∈vars∧v2∉vars∧v1 ↦ b1∈vars_in_block∧v1 ↦ o∈var_object_ownership∧b1≠b2)∨(∃b⦂Blocks,o⦂Objects,v⦂Vars·o∈objects∧v∈vars∧b∈blocks∧v ↦ b∈vars_in_block∧v ↦ o∈var_object_ownership)∨(∃b⦂Blocks·b∈blocks)">
+<org.eventb.core.prIdent name="Objects" org.eventb.core.type="ℙ(Objects)"/>
+<org.eventb.core.prIdent name="objects" org.eventb.core.type="ℙ(Objects)"/>
+<org.eventb.core.prIdent name="var_object_ownership" org.eventb.core.type="ℙ(Vars×Objects)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p18" org.eventb.core.predicate="objects⊆Objects">
+<org.eventb.core.prIdent name="Objects" org.eventb.core.type="ℙ(Objects)"/>
+<org.eventb.core.prIdent name="objects" org.eventb.core.type="ℙ(Objects)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="(∃b⦂Blocks·¬b∈blocks)∨(∃b⦂Blocks,o⦂Objects,v⦂Vars·¬o∈objects∧¬v∈vars∧b∈blocks)∨(∃b1⦂Blocks,b2⦂Blocks,o⦂Objects,v1⦂Vars,v2⦂Vars·o∈objects∧b1∈blocks∧b2∈blocks∧v1∈vars∧¬v2∈vars∧v1 ↦ b1∈vars_in_block∧v1 ↦ o∈var_object_ownership)∨(∃b⦂Blocks·b∈blocks)">
+<org.eventb.core.prIdent name="Objects" org.eventb.core.type="ℙ(Objects)"/>
+<org.eventb.core.prIdent name="objects" org.eventb.core.type="ℙ(Objects)"/>
+<org.eventb.core.prIdent name="var_object_ownership" org.eventb.core.type="ℙ(Vars×Objects)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="(∃b⦂Blocks·¬b∈blocks)∨(∃b⦂Blocks,o⦂Objects,v⦂Vars·¬o∈objects∧¬v∈vars∧b∈blocks∧¬v∈reference_vars)∨(∃b⦂Blocks,o⦂Objects,v1⦂Vars,v2⦂Vars·o∈objects∧b∈blocks∧v1∈vars∧v1 ↦ b∈vars_in_block∧v1 ↦ o∈var_object_ownership∧¬v2∈vars∧¬v2∈reference_vars)∨(∃b1⦂Blocks,b2⦂Blocks,o⦂Objects,v1⦂Vars,v2⦂Vars·o∈objects∧b1∈blocks∧b2∈blocks∧v1∈vars∧¬v2∈vars∧v1 ↦ b1∈vars_in_block∧v1 ↦ o∈var_object_ownership∧¬b1=b2∧¬v2∈reference_vars)∨(∃b⦂Blocks,b1⦂Blocks,o⦂Objects,rv⦂Vars,v⦂Vars·o∈objects∧v∈vars∧b∈blocks∧b1∈blocks∧¬rv∈vars∧¬rv∈reference_vars∧v ↦ b∈vars_in_block∧v ↦ o∈var_object_ownership)∨(∃b⦂Blocks,o⦂Objects,v⦂Vars·o∈objects∧v∈vars∧b∈blocks∧v ↦ b∈vars_in_block∧v ↦ o∈var_object_ownership)∨(∃o⦂Objects,rb⦂Blocks,rv⦂Vars·o∈objects∧rv∈reference_vars∧rb∈blocks∧rv ↦ rb∈reference_in_block∧rv ↦ o∈var_object_reference)∨(∃b⦂Blocks·b∈blocks)">
+<org.eventb.core.prIdent name="Objects" org.eventb.core.type="ℙ(Objects)"/>
+<org.eventb.core.prIdent name="objects" org.eventb.core.type="ℙ(Objects)"/>
+<org.eventb.core.prIdent name="reference_in_block" org.eventb.core.type="ℙ(Vars×Blocks)"/>
+<org.eventb.core.prIdent name="reference_vars" org.eventb.core.type="ℙ(Vars)"/>
+<org.eventb.core.prIdent name="var_object_ownership" org.eventb.core.type="ℙ(Vars×Objects)"/>
+<org.eventb.core.prIdent name="var_object_reference" org.eventb.core.type="ℙ(Vars×Objects)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="(∃b⦂Blocks·b∉blocks)∨(∃b⦂Blocks,o⦂Objects,v⦂Vars·o∉objects∧v∉vars∧b∈blocks)∨(∃b1⦂Blocks,b2⦂Blocks,o⦂Objects,v1⦂Vars,v2⦂Vars·o∈objects∧b1∈blocks∧b2∈blocks∧v1∈vars∧v2∉vars∧v1 ↦ b1∈vars_in_block∧v1 ↦ o∈var_object_ownership)∨(∃b⦂Blocks·b∈blocks)">
+<org.eventb.core.prIdent name="Objects" org.eventb.core.type="ℙ(Objects)"/>
+<org.eventb.core.prIdent name="objects" org.eventb.core.type="ℙ(Objects)"/>
+<org.eventb.core.prIdent name="var_object_ownership" org.eventb.core.type="ℙ(Vars×Objects)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="b≠b1">
+<org.eventb.core.prIdent name="b" org.eventb.core.type="Blocks"/>
+<org.eventb.core.prIdent name="b1" org.eventb.core.type="Blocks"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="v∈vars"/>
+<org.eventb.core.prExpr name="e0" org.eventb.core.expression="vars"/>
+<org.eventb.core.prReas name="r5" org.eventb.core.prRID="org.eventb.core.seqprover.isFunGoal"/>
+<org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.conj:0"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.totalDom:2"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="create_reference_in_block/grd4/GRD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0" org.eventb.core.prSets="Blocks">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p0"/>
+<org.eventb.core.prIdent name="b" org.eventb.core.type="Blocks"/>
+<org.eventb.core.prIdent name="blocks" org.eventb.core.type="ℙ(Blocks)"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="b∈blocks"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="create_reference_in_block/act2/SIM" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="Blocks,Vars">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p13">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p4"/>
+<org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p6"/>
+<org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p7" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p8"/>
+<org.eventb.core.prHypAction name="REWRITE4" org.eventb.core.prHidden="p9" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p10"/>
+<org.eventb.core.prHypAction name="REWRITE5" org.eventb.core.prHidden="p11" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p12"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p13" org.eventb.core.prHyps=""/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="b" org.eventb.core.type="Blocks"/>
+<org.eventb.core.prIdent name="reference_in_block" org.eventb.core.type="ℙ(Vars×Blocks)"/>
+<org.eventb.core.prIdent name="rv" org.eventb.core.type="Vars"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="(∃b⦂Blocks·b∉blocks)∨(∃b⦂Blocks,o⦂Objects,v⦂Vars·o∉objects∧v∉vars∧b∈blocks)∨(∃b1⦂Blocks,b2⦂Blocks,o⦂Objects,v1⦂Vars,v2⦂Vars·o∈objects∧b1∈blocks∧b2∈blocks∧v1∈vars∧v2∉vars∧v1 ↦ b1∈vars_in_block∧v1 ↦ o∈var_object_ownership)∨(∃b⦂Blocks,o⦂Objects,v⦂Vars·o∈objects∧v∈vars∧b∈blocks∧v ↦ b∈vars_in_block∧v ↦ o∈var_object_ownership)∨(∃b⦂Blocks·b∈blocks)">
+<org.eventb.core.prIdent name="Objects" org.eventb.core.type="ℙ(Objects)"/>
+<org.eventb.core.prIdent name="blocks" org.eventb.core.type="ℙ(Blocks)"/>
+<org.eventb.core.prIdent name="objects" org.eventb.core.type="ℙ(Objects)"/>
+<org.eventb.core.prIdent name="var_object_ownership" org.eventb.core.type="ℙ(Vars×Objects)"/>
+<org.eventb.core.prIdent name="vars" org.eventb.core.type="ℙ(Vars)"/>
+<org.eventb.core.prIdent name="vars_in_block" org.eventb.core.type="ℙ(Vars×Blocks)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="¬rv∈vars">
+<org.eventb.core.prIdent name="vars" org.eventb.core.type="ℙ(Vars)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="⊤"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="rv∉vars">
+<org.eventb.core.prIdent name="vars" org.eventb.core.type="ℙ(Vars)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="¬rv∈reference_vars">
+<org.eventb.core.prIdent name="reference_vars" org.eventb.core.type="ℙ(Vars)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="reference_in_block∪{rv ↦ b}=reference_in_block∪{rv ↦ b}"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="rv∉reference_vars">
+<org.eventb.core.prIdent name="reference_vars" org.eventb.core.type="ℙ(Vars)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="(∃b⦂Blocks·b∉blocks)∨(∃b⦂Blocks,o⦂Objects,v⦂Vars·o∉objects∧v∉vars∧b∈blocks∧v∉reference_vars)∨(∃b⦂Blocks,o⦂Objects,v1⦂Vars,v2⦂Vars·o∈objects∧b∈blocks∧v1∈vars∧v1 ↦ b∈vars_in_block∧v1 ↦ o∈var_object_ownership∧v2∉vars∧v2∉reference_vars)∨(∃b1⦂Blocks,b2⦂Blocks,o⦂Objects,v1⦂Vars,v2⦂Vars·o∈objects∧b1∈blocks∧b2∈blocks∧v1∈vars∧v2∉vars∧v1 ↦ b1∈vars_in_block∧v1 ↦ o∈var_object_ownership∧b1≠b2∧v2∉reference_vars)∨(∃b⦂Blocks,b1⦂Blocks,o⦂Objects,rv⦂Vars,v⦂Vars·o∈objects∧v∈vars∧b∈blocks∧b1∈blocks∧rv∉vars∧rv∉reference_vars∧v ↦ b∈vars_in_block∧v ↦ o∈var_object_ownership)∨(∃b⦂Blocks,o⦂Objects,v⦂Vars·o∈objects∧v∈vars∧b∈blocks∧v ↦ b∈vars_in_block∧v ↦ o∈var_object_ownership)∨(∃o⦂Objects,rb⦂Blocks,rv⦂Vars·o∈objects∧rv∈reference_vars∧rb∈blocks∧rv ↦ rb∈reference_in_block∧rv ↦ o∈var_object_reference)∨(∃b⦂Blocks·b∈blocks)">
+<org.eventb.core.prIdent name="Objects" org.eventb.core.type="ℙ(Objects)"/>
+<org.eventb.core.prIdent name="blocks" org.eventb.core.type="ℙ(Blocks)"/>
+<org.eventb.core.prIdent name="objects" org.eventb.core.type="ℙ(Objects)"/>
+<org.eventb.core.prIdent name="reference_vars" org.eventb.core.type="ℙ(Vars)"/>
+<org.eventb.core.prIdent name="var_object_ownership" org.eventb.core.type="ℙ(Vars×Objects)"/>
+<org.eventb.core.prIdent name="var_object_reference" org.eventb.core.type="ℙ(Vars×Objects)"/>
+<org.eventb.core.prIdent name="vars" org.eventb.core.type="ℙ(Vars)"/>
+<org.eventb.core.prIdent name="vars_in_block" org.eventb.core.type="ℙ(Vars×Blocks)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="(∃b⦂Blocks·¬b∈blocks)∨(∃b⦂Blocks,o⦂Objects,v⦂Vars·¬o∈objects∧¬v∈vars∧b∈blocks)∨(∃b1⦂Blocks,b2⦂Blocks,o⦂Objects,v1⦂Vars,v2⦂Vars·o∈objects∧b1∈blocks∧b2∈blocks∧v1∈vars∧¬v2∈vars∧v1 ↦ b1∈vars_in_block∧v1 ↦ o∈var_object_ownership)∨(∃b⦂Blocks,o⦂Objects,v⦂Vars·o∈objects∧v∈vars∧b∈blocks∧v ↦ b∈vars_in_block∧v ↦ o∈var_object_ownership)∨(∃b⦂Blocks·b∈blocks)">
+<org.eventb.core.prIdent name="Objects" org.eventb.core.type="ℙ(Objects)"/>
+<org.eventb.core.prIdent name="blocks" org.eventb.core.type="ℙ(Blocks)"/>
+<org.eventb.core.prIdent name="objects" org.eventb.core.type="ℙ(Objects)"/>
+<org.eventb.core.prIdent name="var_object_ownership" org.eventb.core.type="ℙ(Vars×Objects)"/>
+<org.eventb.core.prIdent name="vars" org.eventb.core.type="ℙ(Vars)"/>
+<org.eventb.core.prIdent name="vars_in_block" org.eventb.core.type="ℙ(Vars×Blocks)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="(∃b⦂Blocks·¬b∈blocks)∨(∃b⦂Blocks,o⦂Objects,v⦂Vars·¬o∈objects∧¬v∈vars∧b∈blocks)∨(∃b⦂Blocks,o⦂Objects,v1⦂Vars,v2⦂Vars·o∈objects∧b∈blocks∧v1∈vars∧v1 ↦ b∈vars_in_block∧v1 ↦ o∈var_object_ownership∧¬v2∈vars)∨(∃b1⦂Blocks,b2⦂Blocks,o⦂Objects,v1⦂Vars,v2⦂Vars·o∈objects∧b1∈blocks∧b2∈blocks∧v1∈vars∧¬v2∈vars∧v1 ↦ b1∈vars_in_block∧v1 ↦ o∈var_object_ownership∧¬b1=b2)∨(∃b⦂Blocks,o⦂Objects,v⦂Vars·o∈objects∧v∈vars∧b∈blocks∧v ↦ b∈vars_in_block∧v ↦ o∈var_object_ownership)∨(∃b⦂Blocks·b∈blocks)">
+<org.eventb.core.prIdent name="Objects" org.eventb.core.type="ℙ(Objects)"/>
+<org.eventb.core.prIdent name="blocks" org.eventb.core.type="ℙ(Blocks)"/>
+<org.eventb.core.prIdent name="objects" org.eventb.core.type="ℙ(Objects)"/>
+<org.eventb.core.prIdent name="var_object_ownership" org.eventb.core.type="ℙ(Vars×Objects)"/>
+<org.eventb.core.prIdent name="vars" org.eventb.core.type="ℙ(Vars)"/>
+<org.eventb.core.prIdent name="vars_in_block" org.eventb.core.type="ℙ(Vars×Blocks)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="(∃b⦂Blocks·b∉blocks)∨(∃b⦂Blocks,o⦂Objects,v⦂Vars·o∉objects∧v∉vars∧b∈blocks)∨(∃b⦂Blocks,o⦂Objects,v1⦂Vars,v2⦂Vars·o∈objects∧b∈blocks∧v1∈vars∧v1 ↦ b∈vars_in_block∧v1 ↦ o∈var_object_ownership∧v2∉vars)∨(∃b1⦂Blocks,b2⦂Blocks,o⦂Objects,v1⦂Vars,v2⦂Vars·o∈objects∧b1∈blocks∧b2∈blocks∧v1∈vars∧v2∉vars∧v1 ↦ b1∈vars_in_block∧v1 ↦ o∈var_object_ownership∧b1≠b2)∨(∃b⦂Blocks,o⦂Objects,v⦂Vars·o∈objects∧v∈vars∧b∈blocks∧v ↦ b∈vars_in_block∧v ↦ o∈var_object_ownership)∨(∃b⦂Blocks·b∈blocks)">
+<org.eventb.core.prIdent name="Objects" org.eventb.core.type="ℙ(Objects)"/>
+<org.eventb.core.prIdent name="blocks" org.eventb.core.type="ℙ(Blocks)"/>
+<org.eventb.core.prIdent name="objects" org.eventb.core.type="ℙ(Objects)"/>
+<org.eventb.core.prIdent name="var_object_ownership" org.eventb.core.type="ℙ(Vars×Objects)"/>
+<org.eventb.core.prIdent name="vars" org.eventb.core.type="ℙ(Vars)"/>
+<org.eventb.core.prIdent name="vars_in_block" org.eventb.core.type="ℙ(Vars×Blocks)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="(∃b⦂Blocks·¬b∈blocks)∨(∃b⦂Blocks,o⦂Objects,v⦂Vars·¬o∈objects∧¬v∈vars∧b∈blocks)∨(∃b1⦂Blocks,b2⦂Blocks,o⦂Objects,v1⦂Vars,v2⦂Vars·o∈objects∧b1∈blocks∧b2∈blocks∧v1∈vars∧¬v2∈vars∧v1 ↦ b1∈vars_in_block∧v1 ↦ o∈var_object_ownership)∨(∃b⦂Blocks·b∈blocks)">
+<org.eventb.core.prIdent name="Objects" org.eventb.core.type="ℙ(Objects)"/>
+<org.eventb.core.prIdent name="blocks" org.eventb.core.type="ℙ(Blocks)"/>
+<org.eventb.core.prIdent name="objects" org.eventb.core.type="ℙ(Objects)"/>
+<org.eventb.core.prIdent name="var_object_ownership" org.eventb.core.type="ℙ(Vars×Objects)"/>
+<org.eventb.core.prIdent name="vars" org.eventb.core.type="ℙ(Vars)"/>
+<org.eventb.core.prIdent name="vars_in_block" org.eventb.core.type="ℙ(Vars×Blocks)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="(∃b⦂Blocks·¬b∈blocks)∨(∃b⦂Blocks,o⦂Objects,v⦂Vars·¬o∈objects∧¬v∈vars∧b∈blocks∧¬v∈reference_vars)∨(∃b⦂Blocks,o⦂Objects,v1⦂Vars,v2⦂Vars·o∈objects∧b∈blocks∧v1∈vars∧v1 ↦ b∈vars_in_block∧v1 ↦ o∈var_object_ownership∧¬v2∈vars∧¬v2∈reference_vars)∨(∃b1⦂Blocks,b2⦂Blocks,o⦂Objects,v1⦂Vars,v2⦂Vars·o∈objects∧b1∈blocks∧b2∈blocks∧v1∈vars∧¬v2∈vars∧v1 ↦ b1∈vars_in_block∧v1 ↦ o∈var_object_ownership∧¬b1=b2∧¬v2∈reference_vars)∨(∃b⦂Blocks,b1⦂Blocks,o⦂Objects,rv⦂Vars,v⦂Vars·o∈objects∧v∈vars∧b∈blocks∧b1∈blocks∧¬rv∈vars∧¬rv∈reference_vars∧v ↦ b∈vars_in_block∧v ↦ o∈var_object_ownership)∨(∃b⦂Blocks,o⦂Objects,v⦂Vars·o∈objects∧v∈vars∧b∈blocks∧v ↦ b∈vars_in_block∧v ↦ o∈var_object_ownership)∨(∃o⦂Objects,rb⦂Blocks,rv⦂Vars·o∈objects∧rv∈reference_vars∧rb∈blocks∧rv ↦ rb∈reference_in_block∧rv ↦ o∈var_object_reference)∨(∃b⦂Blocks·b∈blocks)">
+<org.eventb.core.prIdent name="Objects" org.eventb.core.type="ℙ(Objects)"/>
+<org.eventb.core.prIdent name="blocks" org.eventb.core.type="ℙ(Blocks)"/>
+<org.eventb.core.prIdent name="objects" org.eventb.core.type="ℙ(Objects)"/>
+<org.eventb.core.prIdent name="reference_vars" org.eventb.core.type="ℙ(Vars)"/>
+<org.eventb.core.prIdent name="var_object_ownership" org.eventb.core.type="ℙ(Vars×Objects)"/>
+<org.eventb.core.prIdent name="var_object_reference" org.eventb.core.type="ℙ(Vars×Objects)"/>
+<org.eventb.core.prIdent name="vars" org.eventb.core.type="ℙ(Vars)"/>
+<org.eventb.core.prIdent name="vars_in_block" org.eventb.core.type="ℙ(Vars×Blocks)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="(∃b⦂Blocks·b∉blocks)∨(∃b⦂Blocks,o⦂Objects,v⦂Vars·o∉objects∧v∉vars∧b∈blocks)∨(∃b1⦂Blocks,b2⦂Blocks,o⦂Objects,v1⦂Vars,v2⦂Vars·o∈objects∧b1∈blocks∧b2∈blocks∧v1∈vars∧v2∉vars∧v1 ↦ b1∈vars_in_block∧v1 ↦ o∈var_object_ownership)∨(∃b⦂Blocks·b∈blocks)">
+<org.eventb.core.prIdent name="Objects" org.eventb.core.type="ℙ(Objects)"/>
+<org.eventb.core.prIdent name="blocks" org.eventb.core.type="ℙ(Blocks)"/>
+<org.eventb.core.prIdent name="objects" org.eventb.core.type="ℙ(Objects)"/>
+<org.eventb.core.prIdent name="var_object_ownership" org.eventb.core.type="ℙ(Vars×Objects)"/>
+<org.eventb.core.prIdent name="vars" org.eventb.core.type="ℙ(Vars)"/>
+<org.eventb.core.prIdent name="vars_in_block" org.eventb.core.type="ℙ(Vars×Blocks)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+</org.eventb.core.prProof>
+</org.eventb.core.prFile>

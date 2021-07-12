@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.scContextFile org.eventb.core.accurate="true" org.eventb.core.configuration="org.eventb.core.fwd">
+<org.eventb.core.scCarrierSet name="Blocks" org.eventb.core.source="/ownership_based_memory_management/c0.buc|org.eventb.core.contextFile#c0|org.eventb.core.carrierSet#'" org.eventb.core.type="ℙ(Blocks)"/>
+<org.eventb.core.scCarrierSet name="Objects" org.eventb.core.source="/ownership_based_memory_management/c0.buc|org.eventb.core.contextFile#c0|org.eventb.core.carrierSet#)" org.eventb.core.type="ℙ(Objects)"/>
+<org.eventb.core.scCarrierSet name="Vars" org.eventb.core.source="/ownership_based_memory_management/c0.buc|org.eventb.core.contextFile#c0|org.eventb.core.carrierSet#(" org.eventb.core.type="ℙ(Vars)"/>
+</org.eventb.core.scContextFile>

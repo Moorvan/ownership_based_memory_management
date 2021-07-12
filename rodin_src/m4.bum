@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" version="5">
+<org.eventb.core.refinesMachine name="'" org.eventb.core.target="m3"/>
+<org.eventb.core.seesContext name="(" org.eventb.core.target="c0"/>
+<org.eventb.core.variable name=")" org.eventb.core.identifier="vars_in_block"/>
+<org.eventb.core.variable name="+" org.eventb.core.identifier="vars"/>
+<org.eventb.core.variable name="-" org.eventb.core.identifier="objects"/>
+<org.eventb.core.variable name="/" org.eventb.core.identifier="blocks"/>
+<org.eventb.core.variable name="1" org.eventb.core.identifier="var_object_ownership"/>
+<org.eventb.core.variable name="9" org.eventb.core.identifier="var_object_reference"/>
+<org.eventb.core.variable name=";" org.eventb.core.identifier="reference_vars"/>
+<org.eventb.core.variable name="&gt;" org.eventb.core.identifier="reference_in_block"/>
+<org.eventb.core.event name="?" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="INITIALISATION"/>
+<org.eventb.core.event name="@" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="start_block">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="start_block"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="A" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="create_object">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="create_object"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="B" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="ownership_transfer_in_block">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="ownership_transfer_in_block"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="C" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="ownership_transfer_between_blocks">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="ownership_transfer_between_blocks"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="I" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="create_reference_in_block">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="create_reference"/>
+<org.eventb.core.parameter name="'" org.eventb.core.identifier="v"/>
+<org.eventb.core.parameter name="(" org.eventb.core.identifier="o"/>
+<org.eventb.core.parameter name=")" org.eventb.core.identifier="b"/>
+<org.eventb.core.parameter name="*" org.eventb.core.identifier="rv"/>
+<org.eventb.core.guard name="," org.eventb.core.label="grd1" org.eventb.core.predicate="o ∈ objects"/>
+<org.eventb.core.guard name="-" org.eventb.core.label="grd2" org.eventb.core.predicate="v ∈ vars"/>
+<org.eventb.core.guard name="." org.eventb.core.label="grd3" org.eventb.core.predicate="b ∈ blocks"/>
+<org.eventb.core.guard name="0" org.eventb.core.label="grd5" org.eventb.core.predicate="rv ∉ vars"/>
+<org.eventb.core.guard name="1" org.eventb.core.label="grd6" org.eventb.core.predicate="rv ∉ reference_vars"/>
+<org.eventb.core.action name="2" org.eventb.core.assignment="reference_vars ≔ reference_vars ∪ {rv}" org.eventb.core.label="act1"/>
+<org.eventb.core.guard name="4" org.eventb.core.label="grd8" org.eventb.core.predicate="v ↦ o ∈ var_object_ownership"/>
+<org.eventb.core.action name="5" org.eventb.core.assignment="reference_in_block ≔ reference_in_block ∪ {rv ↦ b}" org.eventb.core.label="act2"/>
+<org.eventb.core.action name="6" org.eventb.core.assignment="var_object_reference ≔ var_object_reference ∪ {rv ↦ o}" org.eventb.core.label="act3"/>
+<org.eventb.core.witness name="7" org.eventb.core.label="b1" org.eventb.core.predicate="b1 = b"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="D" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="create_reference_when_call">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="create_reference"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd9" org.eventb.core.predicate="b ≠ b1"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="H" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="create_reference_when_return">
+<org.eventb.core.refinesEvent name="(" org.eventb.core.target="create_reference"/>
+<org.eventb.core.parameter name="'" org.eventb.core.identifier="v"/>
+<org.eventb.core.parameter name="(" org.eventb.core.identifier="o"/>
+<org.eventb.core.parameter name=")" org.eventb.core.identifier="b"/>
+<org.eventb.core.parameter name="*" org.eventb.core.identifier="rv"/>
+<org.eventb.core.parameter name="+" org.eventb.core.identifier="b1"/>
+<org.eventb.core.guard name="," org.eventb.core.label="grd1" org.eventb.core.predicate="o ∈ objects"/>
+<org.eventb.core.guard name="-" org.eventb.core.label="grd2" org.eventb.core.predicate="v ∈ vars"/>
+<org.eventb.core.guard name="." org.eventb.core.label="grd3" org.eventb.core.predicate="b ∈ blocks"/>
+<org.eventb.core.guard name="/" org.eventb.core.label="grd4" org.eventb.core.predicate="b1 ∈ blocks"/>
+<org.eventb.core.guard name="7" org.eventb.core.label="grd9" org.eventb.core.predicate="b ≠ b1"/>
+<org.eventb.core.guard name="0" org.eventb.core.label="grd5" org.eventb.core.predicate="rv ∉ vars"/>
+<org.eventb.core.guard name="1" org.eventb.core.label="grd6" org.eventb.core.predicate="rv ∉ reference_vars"/>
+<org.eventb.core.action name="2" org.eventb.core.assignment="reference_vars ≔ reference_vars ∪ {rv}" org.eventb.core.label="act1"/>
+<org.eventb.core.guard name="4" org.eventb.core.label="grd8" org.eventb.core.predicate="v ↦ o ∈ var_object_ownership"/>
+<org.eventb.core.action name="5" org.eventb.core.assignment="reference_in_block ≔ reference_in_block ∪ {rv ↦ b1}" org.eventb.core.label="act2"/>
+<org.eventb.core.action name="6" org.eventb.core.assignment="var_object_reference ≔ var_object_reference ∪ {rv ↦ o}" org.eventb.core.label="act3"/>
+<org.eventb.core.guard name="8" org.eventb.core.label="grd10" org.eventb.core.predicate="vars_in_block(v) = b1"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="E" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="access_object_by_owner">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="access_object_by_owner"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="F" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="access_object_by_reference">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="access_object_by_reference"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="G" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="end_block">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="end_block"/>
+</org.eventb.core.event>
+</org.eventb.core.machineFile>
